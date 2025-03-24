@@ -1,0 +1,25 @@
+Model Comp Card or Music Artist
+
+Pictures 
+Music
+Model Information (contact/booking, about me)
+Calendar
+Pricing?
+Photo details?
+
+Front End 
+
+Must Have: 
+Working UI (HTML, CSS, JS)
+Working Backend (Nodejs, Express)
+CRUD 
+ Must be able to stop/play music
+ Must be able to stop/slow down slideshow
+ Must be responsive
+ Database storage 
+
+Minimum Viable Product 
+ Welcome Page 
+ About Me Page 
+ Book Me Page
+ 
