@@ -20,3 +20,24 @@ setInterval (showSlides, 3000);
 
 //Pause slideshow on hover 
 const slideshowContainer = document.getElementById('slideshow-container');
+slideshowContainer.addEventListener('mouseover', function(){
+    clearInterval(showSlides);
+});
+slideshowContainer.addEventListener('mouseout', function(){
+    clearInterval(showSlides,3000);
+});
+
+//Click on image to open the modual 
+slides.forEach(slide =>{
+    slide.addEventListener('click', function(){
+        modual.style.display= "flex";
+        modualImg.src = this.src;
+    });
+});
+
+//Close the modual
+closeModual.addEventListener('click', function(){
+    modual.style.display = "none";
+});
+
+    
