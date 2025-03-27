@@ -21,7 +21,7 @@ setInterval (showSlides, 3000);
 //Pause slideshow on hover 
 const slideshowContainer = document.getElementById('slideshow-container');
 slideshowContainer.addEventListener('mouseover', function(){
-    clearInterval(showSlides);
+    clearInterval(showSlides, );
 });
 slideshowContainer.addEventListener('mouseout', function(){
     clearInterval(showSlides,3000);
@@ -32,6 +32,7 @@ slides.forEach(slide =>{
     slide.addEventListener('click', function(){
         modual.style.display= "flex";
         modualImg.src = this.src;
+        container.style.justifyContent = 'center';
     });
 });
 
