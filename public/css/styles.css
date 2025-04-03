@@ -1,4 +1,4 @@
-body{
+/*body{
   background-color: black;
   color: white;
   font-family:arial;
@@ -10,27 +10,62 @@ body{
   box-sizing: border-box;
 
   text-align: center;
+}*/
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid salmon; /* Fixed border */
+  text-align: center;
 }
 
 h1 {
-  background-color: pink;
-  color: rgb(245, 7, 154);
+  background-color: salmon;
+  color: rgb(255, 255, 255);
   outline-color: blue;
   outline-width: 2px;
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 30px;
+  margin-top: 5px;
   
 }
 
-#slideshow-container {
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.nav-tabs a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-bottom: 2px solid pink;
+}
+
+/* #slideshow-container {
   object-position: center ;
   position: fixed;
   max-width: 80%;
   margin: 0 auto;  
  /* width: 500px; 
   height: 300px; */
+ } 
+*/
+
+#slideshow-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
   overflow: hidden;
+  border: 3px solid pink; /* Added pink border */
 }
+
 
 .slide {
  /* display: none;
@@ -51,7 +86,7 @@ object-position: center;
 
 }
 
-.modual {
+/*.modual {
   display: none;
   position: fixed;
   top: 0;
@@ -75,6 +110,32 @@ object-position: center;
   color: white;
   font-size 2em;
   cursor: pointer;
+}
+  */
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#modal-img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 /*Slide Show Transition */

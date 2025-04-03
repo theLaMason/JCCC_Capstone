@@ -1,10 +1,10 @@
 // Variables 
 let slideIndex= 0;
 const slides = document.querySelectorAll ('.slide');
-const modual = document.getElementById ('modual');
-const modualImg= document.getElementById('modual-img');
-const closeModual= document.getElementById('close-modual');
-
+const modal = document.getElementById ('modal');
+const modalImg= document.getElementById('modal-img');
+const closeModal= document.getElementById('close-modal');
+//==========
 //Functions
 function showSlides() {
     for (let i = 0; i <slides.length; i++) {
@@ -30,15 +30,18 @@ slideshowContainer.addEventListener('mouseout', function(){
 //Click on image to open the modual 
 slides.forEach(slide =>{
     slide.addEventListener('click', function(){
-        modual.style.display= "flex";
-        modualImg.src = this.src;
+        modal.style.display= "flex";
+        modalImg.src = this.src;
         container.style.justifyContent = 'center';
     });
 });
 
 //Close the modual
-closeModual.addEventListener('click', function(){
-    modual.style.display = "none";
+closeModal.addEventListener('click', function(){
+    modal.style.display = "none";
 });
 
-    
+ 
+
+
+
