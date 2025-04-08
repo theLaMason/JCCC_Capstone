@@ -32,25 +32,29 @@
  
         
       <!--Slideshow Container-->
-      <div id="slideshow-container" class="slideshow-container">
-        <img src="assets/images/img1.jpeg" class="slide" alt="Image1">
-        <img src="assets/images/img2.jpeg" class="slide" alt="Image2">
-        <img src="assets/images/img3.jpeg" class="slide" alt="Image3">
-        <img src="assets/images/img4.jpeg" class="slide" alt="Image4">
-        <img src="assets/images/img5.jpg" class="slide" alt="Image5">
-        <img src="assets/images/img6.jpg" class="slide" alt="Image6">
-        <img src="assets/images/img7.jpg" class="slide" alt="Image7">
-        <img src="assets/images/img8.jpg" class="slide" alt="Image8">
-        <img src="assets/images/img9.jpg" class="slide" alt="Image9">
-        <img src="assets/images/img10.jpg" class="slide" alt="Image10">
-      </div>
-      <!--Modal for Enlarged Image-->
-     <!-- Modal for Enlarged Image -->
-      <div id="modal" class="modal">
-        <span id="close-modal" class="close">&times;</span>
-        <img id="modal-img" src="" alt="Enlarged Image">
-      </div>
+      <div class="slideshow-container" id="slideshow-container">
+        <div class="slides-wrapper">
+          <img src="assets/images/img1.jpeg" class="slide" alt="Image1">
+          <img src="assets/images/img2.jpeg" class="slide" alt="Image2">
+          <img src="assets/images/img3.jpeg" class="slide" alt="Image3">
+          <img src="assets/images/img4.jpeg" class="slide" alt="Image4">
+          <img src="assets/images/img5.jpg" class="slide" alt="Image5">  
+          <img src="assets/images/img6.jpg" class="slide" alt="Image6">
+          <img src="assets/images/img7.jpg" class="slide" alt="Image7">
+          <img src="assets/images/img8.jpg" class="slide" alt="Image8">
+          <img src="assets/images/img9.jpg" class="slide" alt="Image9">
+          <img src="assets/images/img10.jpg" class="slide" alt="Image10">
+
+        </div>
     </div>
+      <!--Modal for Enlarged Image-->
+
+      <!-- Modal (for viewing images in larger size) -->
+<div id="modal" style="display: none;">
+  <span id="close-modal">Close</span>
+  <img id="modal-img" src="" alt="Modal Image">
+</div>    
+    
 
     <script src="public/js/scripts.js"></script>    
   </body>
