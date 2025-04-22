@@ -126,3 +126,25 @@ closeModal.addEventListener('click', function() {
     modal.style.display = "none";
 });
 
+//Set Date limit
+const appointmentInput = document.getElementById ("appointment");
+const today = new Date();
+const maxDate = new Date(today);
+maxDate.setDate(today.getDate() + 45);
+
+//Format for datetime-local input
+
+function formatDate(date){
+    return date.toISOString().slice(0, 16);
+    }
+    appointmentInput.min = formatDate(today);
+    appointmentInput.max = formatDate(maxDate);
+
+//Sample booked dates/times (you'll replace this with database check)
+const bookedSlots = [
+    "2025-04-23T14:00",
+    "2025-04-28T10:30"
+];
+
+//Prevent booking already-taken slots
+

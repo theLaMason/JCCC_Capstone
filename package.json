@@ -18,6 +18,5 @@
   "homepage": "https://github.com/theLaMason/JCCC_Capstone#readme",
   "dependencies": {
     "express": "^4.21.2"
-  },
-  "devDependencies": {}
+  }
 }

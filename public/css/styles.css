@@ -48,6 +48,65 @@ h1 {
   border-bottom: 2px solid pink;
 }
 
+.book-section {
+  padding: 40px;
+  border-top:5px solid salmon;
+  background-color: black;
+  color: white;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin:0 auto;
+  gap: 20px;
+}
+
+.book-form,
+.book-calendar{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.book-form input, 
+.book-form textarea, 
+#appointment, 
+#service-type{
+  padding: 10px;
+  font-size 14px;
+  border: 2px solid pink;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+}
+
+textarea{
+  resize: vertical;
+  height: 100px;
+}
+
+#book-now {
+  background-color: salmon;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.service-select {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .arrow-button {
   position: absolute;
   top: 50%;

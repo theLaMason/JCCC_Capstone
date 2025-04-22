@@ -29,10 +29,37 @@
   <a href="#about">ABOUT</a>
   <a href="#book">BOOK ME</a>
 </nav>
-  
+
+<!--Book Me Section-->
+<section id= "book" class= "book-section">
+  <div class = "book-container">
+
+    <!--Left Column Form-->
+    <div class = "book-form">
+      <input type="text" id="name" placeholder="Enter first and last name" maxlength="300">
+      <input type="email" id="name" placeholder="Enter email address" maxlength="300">
+      <textarea id="description" id="name" placeholder="Enter brief description of services needed" maxlength="300"></textarea>
+    </div>
 <br> 
 
-        
+    <!--Right Column Calendar/Dropdown-->
+
+    <div class="book-calendar">
+      <input type="datetime-local" id="appointment" min="" max=""/>
+      <div class= "service-select">
+        <select id="service-type">
+          <option value="">Select service type</option>
+          <option value="Creative Directing">Creative Directing</option>
+          <option value="Photo Shoot">Photo Shoot</option>
+          <option value="Video Shoot (music)">Video Shoot (music)</option>
+          <option value="Content Creation">Content Creation</option>
+      </select>
+      <button id="book-now">BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  
       <!--Slideshow Container-->
       <div class="slideshow-container" id="slideshow-container">
         <!-- Left Arrow Button -->
