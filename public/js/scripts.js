@@ -147,4 +147,45 @@ const bookedSlots = [
 ];
 
 //Prevent booking already-taken slots
+appointmentInput.addEventListener("change", () => {
+    const selected = appointmentInput.value;
+    if (bookedSlots.includes(selected)) {
+        alert("That time slot is already booked. Please choose another.");
+        appointmentInput.value = "";
+    }
+});
+
+//Handle booking 
+
+document.getElementById("book-now").addEventListener("click", () => {
+    const name = document.getElementById("name").value.trim();
+    const name = document.getElementById("email").value.trim();
+    const name = document.getElementById("description").value.trim();
+    const appointment = appointmentInput.value;
+    const name = document.getElementById("service-type").value;
+
+    if (!name || !email || !desc || !appointment || !service) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (desc.length > 300 || name.length > 300 || email.length > 300) {
+        alert("Please stay under 300 characters.");
+        return;
+    }
+
+    //Confirm alert 
+    const confirmBooking = confirm(`Are you sure you want to book this slot with Delena Michelle?`);
+    if (!confirmBooking) return;
+
+    // For now: simulate storing in database + email
+
+    console.log("Booking confirmed:", { name, email, desc, appointment, service});
+
+    alert("Booking successful! A confirmation will be sent to your email.");
+
+    // TODO: Implement backend request here 
+    
+        
+});
 
